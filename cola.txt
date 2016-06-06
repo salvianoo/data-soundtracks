@@ -1,0 +1,5 @@
+# delete all files in bucket
+s3cmd rm --recursive --force s3://demo-aws2016
+
+# upload sync files to s3
+for file in $(ls bucket-s3-files); do s3cmd put $file s3://demo-aws2016; done

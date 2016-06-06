@@ -1,0 +1,17 @@
+{
+  "name": "data-soundtracks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "upload_to_s3.js",
+  "dependencies": {
+    "aws-sdk": "^2.3.17",
+    "iconv-lite": "^0.4.13",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salviano Ludgerio",
+  "license": "ISC"
+}
