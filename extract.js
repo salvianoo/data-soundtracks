@@ -4,6 +4,13 @@ var lineReader = require('readline').createInterface({
   input: fs.createReadStream('soundtracks_raw.list')
 });
 
+// create a dir
+fs.exists('buckect-s3-files', function(exists) {
+  fs.mkdir('bucket-s3-files', function(err) {
+    console.log(err);
+  });
+});
+
 var dirName = 'bucket-s3-files';
 
 movie_title_re = /^#\s".+"/;
