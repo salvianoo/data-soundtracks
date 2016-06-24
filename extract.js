@@ -26,8 +26,9 @@ lineReader.on('line', function(line) {
     fs.writeFile(dirName + '/' + filename + '.json', content, function(err) {
       if (err) {
         console.log(err);
+      } else {
+        console.log(filename);  
       }
-      console.log(filename);
     });
   }
 });
